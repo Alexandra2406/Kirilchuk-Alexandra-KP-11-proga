@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Background="#FFE5B9B9" Margin="0,0,3.6,2.4">
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="155*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="List of Students" Margin="72.74,12,260,0" VerticalAlignment="Top" Height="62" Width="442" HorizontalAlignment="Center" FontSize="35" Foreground="White" HorizontalContentAlignment="Center" Grid.Column="1"/>
+        <Button x:Name ="ToMainW" Content="To Main Window " HorizontalAlignment="Left" Margin="571.74,20,0,0" VerticalAlignment="Top" Width="171" Height="52"  FontSize="20" Background="#FFB14D4D" Foreground="White" Click="ToMainW_Click" Grid.Column="1" BorderBrush="White"/>
+
+
+        <Button x:Name ="TakeNote" Content="Take Note" HorizontalAlignment="Left" Margin="495.2,158,0,0" VerticalAlignment="Top" Width="171" Height="52"  FontSize="20" Background="#FFB14D4D" Foreground="White" Click="TakeNote_Click" Grid.Column="1" BorderBrush="White" RenderTransformOrigin="0.501,2.273"/>
+        <Button x:Name ="Remove" Content="Remove " HorizontalAlignment="Left" Margin="495.2,324,0,0" VerticalAlignment="Top" Width="171" Height="52"  FontSize="20" Background="#FFB14D4D" Foreground="White" Click="Remove_Click" Grid.Column="1" BorderBrush="White"/>
+
+        <Label Content="Enter first and last name" HorizontalAlignment="Left" VerticalAlignment="Top" Width="224" Grid.Column="1" Margin="64.2,68,0,0" FontSize="20" Foreground="White"/>
+        <Label Content="Enter the number of the security book" HorizontalAlignment="Left" VerticalAlignment="Top" Width="346" Grid.Column="1" Margin="64.2,173,0,0" FontSize="20" Foreground="White" Height="37"/>
+        <Label Content="Enter the number of the security book to remove" HorizontalAlignment="Left" VerticalAlignment="Top" Width="444" Grid.Column="1" Margin="64.2,275,0,0" FontSize="20" Foreground="White" Height="35"/>
+        <TextBox x:Name ="SurnameAndName" HorizontalAlignment="Left" Height="43" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Grid.Column="1" Margin="64.2,110,0,0" Background="#FFBD868F" BorderBrush="White" FontSize="20" Foreground="White"/>
+        <TextBox x:Name ="ID_Node" HorizontalAlignment="Left" Height="43" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Grid.Column="1" Margin="64.2,215,0,0" Background="#FFBD868F" BorderBrush="White" FontSize="20" Foreground="White"/>
+        <TextBox x:Name ="ID_Remove" HorizontalAlignment="Left" Height="43" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Grid.Column="1" Margin="64.2,324,0,0" Background="#FFBD868F" BorderBrush="White" FontSize="20" Foreground="White"/>
+
+
+    </Grid>
+</Window>

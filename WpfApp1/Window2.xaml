@@ -1,0 +1,123 @@
+﻿<Window x:Class="WpfApp1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid Background="#FFE5B9B9" RenderTransformOrigin="1.284,1.049" Margin="0,0,-0.4,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="132*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Tic-Tac-Toe" Margin="59,20,28.6,0" VerticalAlignment="Top" Height="62" Width="442" HorizontalAlignment="Center" FontSize="35" Foreground="White" HorizontalContentAlignment="Center"/>
+        <Button x:Name ="ToMainW" Content="To Main Window " HorizontalAlignment="Left" Margin="41.4,20,0,0" VerticalAlignment="Top" Width="171" Height="52" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="ToMainW_Click" BorderBrush="White" Grid.Column="1"/>
+        <UniformGrid x:Name ="Container" Rows="5" Columns="5" Margin="111,125,0,55" HorizontalAlignment="Left" Width="323">
+            <ComboBox x:Name="A"  Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose0"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="B" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose01"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX1" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="C" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose02"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX2" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="D" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose03"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX3" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="E" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose04"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX4" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="F" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose05"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX5" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="G" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose06"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX6" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="H" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose07"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX7" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="I" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose08"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX8" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="J" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose09"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX9" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="K" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose010"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX10" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="L" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose011"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX11" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="M" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose012"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX12" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="N" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose013"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX13" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="P" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose014"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX14" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="Q" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose015"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX15" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="R" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose016"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX16" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="S" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose017"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX17" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="T" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose018"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX18" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="U" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose019"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX19" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="V" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose020"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX20" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="W" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose021"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX21" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="X" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose022"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX22" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="Y" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose023"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX23" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+            <ComboBox x:Name="Z" Foreground="#FFB14D4D" FontSize="30">
+                <Button x:Name="Choose024"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+                <Button x:Name="ChooseX24" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+            </ComboBox>
+        </UniformGrid>
+        <Button x:Name ="Result" Content="Result" HorizontalAlignment="Left" Margin="41.4,125,0,0" VerticalAlignment="Top" Width="171" Height="52" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="Result_Click" BorderBrush="White" Grid.Column="1"/>
+        <Label x:Name ="Result_L" Content="" HorizontalAlignment="Left" Grid.Column="1" Margin="41.4,221,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="41" Width="212" FontWeight="Bold"/>
+        <Button x:Name ="Clear" Content="New Game" HorizontalAlignment="Left" Margin="41.4,313,0,0" VerticalAlignment="Top" Width="171" Height="52" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="Clear_Click" BorderBrush="White" Grid.Column="1"/>
+
+    </Grid>
+</Window>

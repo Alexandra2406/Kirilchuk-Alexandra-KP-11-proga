@@ -89,6 +89,12 @@ namespace WpfApp1
             });
             Result_L.Content = string.Empty;
         }
-        
+
+        private void Play_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 w5 = new Window5();
+            Hide();
+            w5.Show();
+        }
     }
 }

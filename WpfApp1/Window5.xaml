@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp1.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window5" Height="450" Width="800">
+    <Grid Background="#FFE5B9B9" RenderTransformOrigin="1.284,1.049" Margin="0,0,-0.4,0">
+        <Label Content="Tic-Tac-Toe" Margin="71,20,281,0" VerticalAlignment="Top" Height="62" Width="442" HorizontalAlignment="Center" FontSize="35" Foreground="White" HorizontalContentAlignment="Center"/>
+        <Button x:Name ="ToMainW" Content="To Main Window " HorizontalAlignment="Left" Margin="595,28,0,0" VerticalAlignment="Top" Width="171" Height="52" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="ToMainW_Click" BorderBrush="White"/>
+        <UniformGrid x:Name ="Container" Rows="5" Columns="5" Margin="110,125,0,55" HorizontalAlignment="Left" Width="323">
+            <Button x:Name ="A" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="B" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="C" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="D" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="E" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="F" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="G" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="H" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="I" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="J" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="K" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="L" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="M" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="N" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="P" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="Q" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="R" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="S" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="T" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="U" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="V" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="W" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="X" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="Y" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+            <Button x:Name ="Z" Content="" Click="Button_Click" Background="#FFBD868F" Foreground="White" BorderBrush="White"/>
+        </UniformGrid>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="595,250,0,0" Height="34">
+            <Button x:Name="Choose0"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
+            <Button x:Name="ChooseX" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
+        </ComboBox>
+        <Label Content="Choose who you are" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="539,188,0,0" RenderTransformOrigin="0.526,0.551" Foreground="White" FontSize="25"/>
+
+    </Grid>
+</Window>

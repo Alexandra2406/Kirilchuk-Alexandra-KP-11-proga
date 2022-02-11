@@ -21,3 +21,5 @@ C:\Users\Admin\source\repos\WpfApp1\obj\Debug\Window1.baml
 C:\Users\Admin\source\repos\WpfApp1\obj\Debug\Window2.baml
 C:\Users\Admin\source\repos\WpfApp1\obj\Debug\Window3.baml
 C:\Users\Admin\source\repos\WpfApp1\obj\Debug\Window4.baml
+C:\Users\Admin\source\repos\WpfApp1\obj\Debug\Window5.g.cs
+C:\Users\Admin\source\repos\WpfApp1\obj\Debug\Window5.baml

@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <Label Content="Tic-Tac-Toe" Margin="59,20,28.6,0" VerticalAlignment="Top" Height="62" Width="442" HorizontalAlignment="Center" FontSize="35" Foreground="White" HorizontalContentAlignment="Center"/>
         <Button x:Name ="ToMainW" Content="To Main Window " HorizontalAlignment="Left" Margin="41.4,20,0,0" VerticalAlignment="Top" Width="171" Height="52" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="ToMainW_Click" BorderBrush="White" Grid.Column="1"/>
-        <UniformGrid x:Name ="Container" Rows="5" Columns="5" Margin="111,125,0,55" HorizontalAlignment="Left" Width="323">
+        <UniformGrid x:Name ="Container" Rows="5" Columns="5" Margin="111,100,0,80" HorizontalAlignment="Left" Width="323">
             <ComboBox x:Name="A"  Foreground="#FFB14D4D" FontSize="30">
                 <Button x:Name="Choose0"  Background="#FFE5B9B9" Content="     0      " Foreground="White" FontSize="20" Click="Choose0_Click"/>
                 <Button x:Name="ChooseX" Background="#FFE5B9B9" Content="     x      " Foreground="White" FontSize="20" Click="ChooseX_Click"/>
@@ -118,6 +118,9 @@
         <Button x:Name ="Result" Content="Result" HorizontalAlignment="Left" Margin="41.4,125,0,0" VerticalAlignment="Top" Width="171" Height="52" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="Result_Click" BorderBrush="White" Grid.Column="1"/>
         <Label x:Name ="Result_L" Content="" HorizontalAlignment="Left" Grid.Column="1" Margin="41.4,221,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="41" Width="212" FontWeight="Bold"/>
         <Button x:Name ="Clear" Content="New Game" HorizontalAlignment="Left" Margin="41.4,313,0,0" VerticalAlignment="Top" Width="171" Height="52" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="Clear_Click" BorderBrush="White" Grid.Column="1"/>
+
+        <Button Content="Play against the computer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="323" Margin="111,365,0,0" Height="45" FontSize="20" Background="#FFB14D4D" Foreground="White" Click="Play_Click" BorderBrush="White" />
+
 
     </Grid>
 </Window>

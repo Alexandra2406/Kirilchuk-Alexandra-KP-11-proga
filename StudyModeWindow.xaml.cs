@@ -106,7 +106,7 @@ namespace Prac1
             else
             {
                 Symbol.Content = 0;
-                m = 0;
+                m = 1;
                 InputField.IsEnabled = false;
             }
         }

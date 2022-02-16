@@ -39,7 +39,7 @@ namespace Prac1
         Stopwatch stopWatch;
         TimeSpan ts;
         double t0, t1;
-        int count = 0, h = 1, m = 0;
+        int count = 0, h = 1, m = 1;
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
@@ -96,10 +96,12 @@ namespace Prac1
                 statisticpro.Close();
                 InputField.IsEnabled = true;
                 Symbol.Content = 0;
+                m = 1;
             }
             else
             {
                 Symbol.Content = 0;
+                m = 1;
                 InputField.IsEnabled = false;
             }
         }
@@ -147,7 +149,7 @@ namespace Prac1
             double[] P = new double[int.Parse(CountProtection.Text)];
             double[] P1 = new double[int.Parse(CountProtection.Text)];
             double[] P2 = new double[int.Parse(CountProtection.Text)];
-            while (!Statistic.EndOfStream && j <= int.Parse(CountProtection.Text))
+            while (!Statistic.EndOfStream && j < int.Parse(CountProtection.Text))
             {
                 string Line = Statistic.ReadLine();
                 string[] Elem2 = Line.Split(' ');

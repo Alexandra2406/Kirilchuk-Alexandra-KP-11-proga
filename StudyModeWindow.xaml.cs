@@ -41,7 +41,7 @@ namespace Prac1
         Stopwatch stopWatch;
         TimeSpan ts;
         double t0, t1;
-        int count = 0, h = 0, m = 0;
+        int count = 0, h = 1, m = 1;
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
@@ -77,6 +77,7 @@ namespace Prac1
         {
             if (int.Parse(Count.Text) > int.Parse(Convert.ToString(SymbolCount.Content)))
             {
+                
                 StreamReader resul = new StreamReader("Result.txt");
                 string[] Line = resul.ReadLine().Split(' ', '\n', (char)StringSplitOptions.RemoveEmptyEntries);
                 resul.Close();
@@ -100,7 +101,7 @@ namespace Prac1
                 statistic.Close();
                 InputField.IsEnabled = true;
                 Symbol.Content = 0;
-                m = 0;
+                m = 1;
             }
             else
             {

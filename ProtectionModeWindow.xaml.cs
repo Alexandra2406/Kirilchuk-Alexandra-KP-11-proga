@@ -39,7 +39,7 @@ namespace Prac1
         Stopwatch stopWatch;
         TimeSpan ts;
         double t0, t1;
-        int count = 0, h = 0, m = 0;
+        int count = 0, h = 1, m = 0;
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
@@ -139,8 +139,8 @@ namespace Prac1
                 }
                 Statistic_PRO.Close();
             }
-            StreamReader Statistic = new StreamReader("Statistic.txt"); 
-            j = 0; int r = 0, k = 0;
+            StreamReader Statistic = new StreamReader("Statistics.txt"); 
+            j = 0; int r = 0, k = 0, p = 0;
             double[] Fisher = new double[int.Parse(CountProtection.Text)];
             double[] S_ = new double[int.Parse(CountProtection.Text)];
             double[] t_ = new double[int.Parse(CountProtection.Text)];
@@ -155,17 +155,17 @@ namespace Prac1
                 if (Math.Pow(double.Parse(Elem2[1]), 2) >= Math.Pow(S[j], 2)) { Smax = Math.Pow(double.Parse(Elem2[1]), 2); Smin = Math.Pow(S[j], 2); }
                 else { Smax = Math.Pow(S[j], 2); Smin = Math.Pow(double.Parse(Elem2[1]), 2); }
                 Fisher[j] = Smax / Smin;
-                if (Fisher[j] > 4.74) DispField.Content = "heterogeneous"; //неоднорідні
+                if (Fisher[j] > 4.74) { p++; DispField.Content = "heterogeneous"; } //неоднорідні
                 else DispField.Content = "homogeneous"; //однорідні
                 S_[j] = Math.Sqrt((Math.Pow(double.Parse(Elem2[1]), 2) + Math.Pow(S[j], 2)) * (8 - 1) / (2 * 8 - 1));
                 t_[j] = Math.Abs(double.Parse(Elem2[0]) + M[j]) / (S_[j] * Math.Sqrt(2.0 / 8));
                 if (t_[j] > 1.860) { MessageBox.Show("не випадкова", "розбіжність"); k++; }
-                else { r++; k++; }
+                else { MessageBox.Show("випадкова", "розбіжність"); r++; k++; }
                 P[j] = 1.0 * r / k;
                 StatisticsBlock.Content = P[j];
-                P1[j] = 1;
+                P1[j] = (k - p) / k;
                 P1Field.Content = P1[j];
-                P2[j] = 2;
+                P2[j] = p / k;
                 P2Field.Content = P2[j];
                 j++; 
             }
